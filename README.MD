@@ -16,7 +16,7 @@ et met en cache les réponses localement pour accélérer les requêtes suivante
 1. Cloner le dépôt :
 
 ```bash
-git clone <repo-url> caching-proxy
+git clone https://github.com/Hermann002/cache_proxy.git/ caching-proxy
 cd caching-proxy
 ```
 
