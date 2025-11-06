@@ -83,16 +83,6 @@ curl http://localhost:8000/get
 
 La première requête sera transmise à l'origine et mise en cache ; les suivantes seront servies depuis le cache.
 
-## Tests simples
-
-Le dépôt contient un petit fichier `cache_proxy/test.py` (script de démonstration). Pour l'exécuter :
-
-```bash
-python -m cache_proxy.test
-```
-
-Ce script n'est pas une suite de tests automatisés (pytest), c'est un utilitaire d'exemple/démo.
-
 ## Dépannage
 
 - Si vous obtenez des erreurs d'import, vérifiez que vous utilisez le bon environnement virtuel et que
