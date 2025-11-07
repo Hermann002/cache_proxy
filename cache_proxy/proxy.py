@@ -39,6 +39,9 @@ class CachingProxyHandler(http.server.BaseHTTPRequestHandler):
         self._send_response(status, headers, body)
 
     def _send_response(self, status: int, headers: dict, body: bytes):
+        if isinstance(body, str):
+            body = body.encode("utf-8")
+            
         self.send_response(status)
         for key, val in headers.items():
             if key.lower() not in ("content-length", "server", "date"):
