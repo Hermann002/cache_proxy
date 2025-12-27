@@ -2,4 +2,3 @@ test.py
 env/
 caching_proxy.egg*
 __pycache__/
-test
